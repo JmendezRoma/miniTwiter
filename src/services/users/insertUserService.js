@@ -1,3 +1,5 @@
+import crypto from 'crypto';
+
 // Importar el módulo bcrypt.
 import bcrypt from 'bcrypt';
 

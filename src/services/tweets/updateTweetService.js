@@ -9,6 +9,7 @@ import { saveFileError } from '../errorService.js';
 import { createPathIfNotExistsUtil } from '../../utils/createPathUtil.js';
 
 import { UPLOADS_DIR } from '../../../env.js';
+import crypto from 'crypto';
 
 import {
   selectTweetByIdModel,

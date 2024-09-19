@@ -11,6 +11,7 @@ import { createPathIfNotExistsUtil } from '../../utils/createPathUtil.js';
 import { insertTweetModel } from '../../models/tweets/index.js';
 
 import { UPLOADS_DIR } from '../../../env.js';
+import crypto from 'crypto';
 
 export const insertTweetService = async (userId, text, image) => {
   try {

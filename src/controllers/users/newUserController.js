@@ -4,6 +4,7 @@ import { newUserSchema } from '../../schemas/users/newUserSchema.js';
 
 // Importamos los servicios.
 import { insertUserService } from '../../services/users/insertUserService.js';
+import crypto from 'crypto';
 
 export const newUserController = async (req, res, next) => {
   try {

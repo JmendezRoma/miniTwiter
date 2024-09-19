@@ -17,6 +17,7 @@ export async function deleteUploadsPathUtil() {
   } catch (error) {
     error.code = 'DELETE_UPLOADS_PATH_ERROR';
     error.message = 'No se ha podido eliminar el directorio de uploads';
-    throw error;
+
+    console.log(error);
   }
 }

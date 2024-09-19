@@ -11,6 +11,8 @@ import { createPathIfNotExistsUtil } from '../../utils/createPathUtil.js';
 import { UPLOADS_DIR } from '../../../env.js';
 import { updateUserAvatarModel } from '../../models/users/updateUserAvatarModel.js';
 
+import crypto from 'crypto';
+
 export const updateAvatarUserService = async (id, img, width) => {
   try {
     // Ruta donde se guardará el archivo.
